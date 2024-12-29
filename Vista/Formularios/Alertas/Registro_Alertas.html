@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="icon" type="image/png" href="../../../Vista/Estilo/Images/icono1.png">
+
+
+  <!-- Required meta tags -->  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Required Estilos y Plugins -->
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Css/Formularios/Formulario_Alertas.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/fontawesome.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/regular.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/solid.css">
+
+    <script src=../../../Vista/Estilo/Plugins/Jquery/Jquery/jquery-3.2.1.js"></script>
+    <script src="../../../Vista/Estilo/Js/Funciones/Redirecciones_Pestañas.js"></script>
+
+
+
+    <title>Alertas</title>
+
+
+</head>
+    
+<body>
+
+
+   
+
+        <form action="../../../Controlador/Control_Gestion_Alertas/Registro_Alerta.php"id="formulario" name="formulario" method="post">
+
+        <div class="form">
+        <div id="cerrar"><a href="javascript:cerrar()"><img src="../../../Vista/Estilo/Images/logo cierre.png"></a>
+
+
+
+            <h1><span class="fas fa-alert icon-menu">  Nueva Alerta</h1>
+
+             
+        <div class="Grupo-Alertas">
+
+
+
+        
+        
+        <div class="Tipo-Alerta">
+        <h4>Tipo de Alerta</h4>
+        <select type="text" name="Tipo_Alerta" id="Tipo_Alerta" autofocus required>
+                        <option value="">...</option>
+                        <option value="1">Tipo 1</option>
+                        <option value="2">Tipo 2</option>
+                        <option value="3">Tipo 3</option>
+                        </select> 
+
+        
+      
+
+        <h4>Tipo de Afectacion</h4>
+        
+        <select type="text" name="Afectacion" id="Afectacion" autofocus required>
+
+                        <option value="">...</option>
+                        <option value="Baja">Baja</option>
+                        <option value="Media">Media</option>
+                        <option value="Alta">Alta</option>
+                        </select> </div>
+
+
+
+         <br><h4> Fecha de Actividad</h4>
+        <div class="Fecha-Hora-Actividad">
+       
+        <input type="date" name="Fecha_Actividad" id="Fecha_Actividad" autofocus required />
+        <input type="text" name="Hora_Actividad"  id="Hora_Actividad"  placeholder="Hora de Actividad" autofocus required><span class="barra"></span>
+    </div>
+
+
+
+
+        <br><h4>Nombre de Actividad</h4>
+        <div class="Nombre-Actividad">
+        
+        <input type="text" name="Nombre_Actividad"  id="Nombre_Actividad"  placeholder="Nombre Actividad" autofocus required></div>
+
+
+       
+
+        <div class="Personal-Acargo">
+
+        <h4>Personal BDV A Cargo</h4>
+        
+        <select type="text" name="Personal_Acargo_BDV" id="Personal_Acargo_BDV" autofocus required><span class="barra"></span>
+
+                        <option value="">...</option>
+                        <option value="Soporte Unix">Soporte Unix</option>
+                        <option value="Soporte Windows">Soporte Windows</option>
+                        <option value="Perimetro">Perimetro</option>
+                        <option value="Firewall">Firewall</option>
+                        <option value="Base de Datos">Base de Datos</option>
+                        </select> 
+
+
+
+        <h4>Personal Externo a Cargo</h4>
+        
+        <select type="text" name="Personal_Externo_Acargo" id="Personal_Externo_Acargo" ><span class="barra" autofocus required></span>
+
+                        <option value="0">...</option>
+                        <option value="IBM">IBM</option>
+                        <option value="Consorcio Credicard">Consorcio Credicard</option>
+                        <option value="Suiche 7B">Suiche 7B</option>
+                        </select></div>
+
+
+        
+        
+
+        
+
+
+
+
+   
+</div>
+
+            </br><button type="submit">GUARDAR</button>
+        </form>
+
+
+ 
+
+</body>
+</html>

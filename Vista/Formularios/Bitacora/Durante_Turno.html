@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="icon" type="image/png" href="../../../Vista/Estilo/Images/icono1.png">
+
+
+  <!-- Required meta tags -->  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Required Estilos y Plugins -->
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Css/Formularios/Formulario_Bitacora.css">
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/fontawesome.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/regular.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/solid.css">
+
+    <script src=../../../Vista/Estilo/Plugins/Jquery/Jquery/jquery-3.2.1.js"></script>
+    <script src="../../../Vista/Estilo/Js/Funciones/Redirecciones_Pestañas.js"></script>
+
+    <title>Bitacora / Gestion</title>
+
+
+</head>
+    
+    <body>
+
+
+   
+
+        <form action="../../../Controlador/Control_Gestion_Bitacora/Registro_Durante_Turno.php"id="formulario" name="formulario" method="post">
+
+        <div class="form">
+        <a href="../../Tablas/Tablas_Bitacora/Seleccion_Bitacora.html" id="Atras"><img src="../../../Vista/Estilo/Images/logo cierre.png"></a>
+
+
+
+            <h1>Gestion y Bitacora</h1>
+
+             </br><h2>Gestion</h2></br>
+
+
+
+        
+
+        <br><h3>Gestión de Monitoreo</h3>
+        <div class="Observaciones">
+
+        <textarea type="text" name="Gestion_Monitoreo"  id=Gestion_Monitoreo"  placeholder="Descripcion" autofocus required></textarea>
+        </div>
+
+
+        <br><br><h3>Gestión de Seguridad C.P.P.D </h3>
+        <div class="Gestion-Seguridad">
+
+        <textarea type="text" name="Gestion_Seguridad"  id=Gestion_Seguridad"  placeholder="Descripcion" autofocus required></textarea>
+        </div>
+
+        <br><br><h3>Gestión de Seguimiento</h3>
+        <div class="Gestion-Seguimiento">
+
+        <textarea type="text" name="Gestion_Seguimiento"  id=Gestion_Seguimiento"  placeholder="Descripcion" autofocus required></textarea>
+        </div>
+
+
+
+    </br><button type="submit">GUARDAR</button>
+        </form>
+
+
+ 
+
+</body>
+</html>

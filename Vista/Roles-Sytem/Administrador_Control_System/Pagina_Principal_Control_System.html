@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<link rel="icon" type="image/png" href="../../Estilo/Images/icono1.png">
+
+<!-- Required meta tags -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Required Estilos y Plugins -->
+
+   
+    <link rel="stylesheet" href="../../Estilo/Css/Funcionabilidad/Menu.css">
+    <link rel="stylesheet" href="../../Estilo/Css/Funcionabilidad/home.css">
+    <link rel="stylesheet" href="../../Estilo/Css/Funcionabilidad/Fecha_Hora.css">
+    
+
+    <link rel="stylesheet" href="../../Estilo/Plugins/Fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../Estilo/Plugins/Fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../../Estilo/Plugins/Fontawesome/css/regular.css">
+    <link rel="stylesheet" href="../../Estilo/Plugins/Fontawesome/css/solid.css">
+  
+
+
+    <script src="../../Estilo/Plugins/Jquery/jquery-3.2.1.js"></script>
+    <script src="../../Estilo/Js/Funciones/Funcionalidad_Menu.js"></script>
+    <script src="../../Estilo/Js/Funciones/Redirecciones_Pestañas.js"></script>
+    <script src="../../Estilo/Js/Funciones/Fecha_Hora.js"></script>
+
+
+
+     <title>Sistema de Gestion y Monitoreo</title>
+
+</head>
+
+
+
+  <body onload="startTime()">
+
+
+        <div id="clockdate">
+        <div class="clockdate-wrapper">
+        <div id="clock"></div>
+        <div id="date"></div>
+        <div id="fecha"></div>
+  </div>
+  </div>
+    
+
+
+
+    <header>
+
+        <!-- Menu de Notificaciones -->
+    <div class="iconos" id="iconos" >
+     <div id="salir" class="salir"><span class="fas fa-power-off "></span></div>
+     <div id="mensaje" class="mensaje"><span class="fa fa-mail-bulk "></span></div>
+     <div id="alerta" class="alerta"><span class="fa fa-exclamation-triangle "></span></div></div>
+
+    
+        <!-- Menu Lateral -->
+
+        <span id="button-menu" class="fa fa-bars"></span>
+
+
+
+         <nav class="navegacion">
+         <ul class="menu">
+
+     
+            <li class="title-menu"><span class="fab fa-battle-net icon-menu"></span>Monitoreo y Gestion de Servicios</li>
+
+            <li><a href="Pagina_Principal_Control_System"><span class="fa fa-home icon-menu"></span>Inicio</a></li>
+            <li class="item-submenu" menu="1">
+
+
+        <!-- Modulo Gestion de Usuario -->
+
+            <a href="#"><span class="fas fa-user-cog icon-menu"></span>Gestion de Usuario</a>
+            <ul class="submenu">
+            <li class="title-menu"><span class="fas fa-user-cog icon-menu"></span>Gestion de Usuario</li>
+            <li class="go-back">Atras</li>
+
+            <li> <div  id="Registro-Usuario" class="menu"><span class="fas fa-user-plus icon-menu"></span>Nuevo Usuario</div></li>
+
+            <li> <div   id="Usuarios" class="menu"><span  class="fas fa-user-friends icon-menu"></span>Consulta de Trabajadores</div></li>
+
+            <li> <div  id="Cambio-Clave-Trabajador" class="menu"><span class="fas fa-cogs icon-menu"></span>Gestion de Claves</div></li>
+
+          
+            </div>
+            </ul>
+            </li>
+
+
+        <!-- Modulo Gestion de Servicio -->
+
+        <li class="item-submenu" menu="2">
+        <a href="#"><span class="fa fa-suitcase icon-menu"></span>Gestion de Servicio</a>
+
+        <ul class="submenu">
+        <li class="title-menu"><span class="fa fa-suitcase icon-menu"></span>Gestion</li>
+        <li class="go-back">Atras</li>
+
+        <li><div  id="Registro-Disponibilidad" class="menu" ><span class="fa fa-home icon-menu"></span>Disponibilidad de Servicio</div></li>
+
+
+        <li><div  id="Registro-Disponibilidad-Corta" class="menu" ><span class="fa fa-home icon-menu"></span>Disponibilidad Corta</div></li>
+
+        <li><div  id="Bitacora" class="menu"><span class="fa fa-home icon-menu"></span>Bitacora</div></li>
+
+        <li><div  id="Registro-Cheklist" class="menu" ><span class="fa fa-home icon-menu"></span>Cheklist</div></li>
+
+        <li><div  id="Registro-Alertas" class="menu" ><span class="fa fa-home icon-menu"></span>Generacion de Alertas</div></li>
+                        
+        </ul>
+        </li>
+
+
+        <!-- Modulo Reportes de Servicio -->
+
+        <li class="item-submenu" menu="3">
+        <a href="#"><span class="fas fa-network-wired icon-menu"></span>Seguimiento de Servicio</a>
+        <ul class="submenu">
+
+        <li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span>Seguimiento de Servicio</li>
+        <li class="go-back">Atras</li>
+       
+        <li><a href="#" ><span class="far fa-chart-bar icon-menu"></span> Estadistica de Servicio</a></li>
+
+        <li><a href="#" ><span class="far fa-chart-bar icon-menu"></span> Generador de Reportes</a></li>               
+        </ul>
+        </li>
+
+
+        <!-- Alertas -->
+
+        <li class="item-submenu" menu="4">
+        <a href="#"><span class="fas fa-network-wired icon-menu"></span>Alertas Tecnologia</a>
+        <ul class="submenu">
+
+        <li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span>Alertas Tecnologia</li>
+        <li class="go-back">Atras</li>
+       
+        <li><div  id="Generacion-Alertas" class="menu" ><span class="far fa-chart-bar icon-menu"></span> Generacion de Alertas</a></li>
+
+        <li><div  id="Alertas-Pendientes" class="menu" ><span class="far fa-chart-bar icon-menu"></span> Alertas Pendientes</a></li>               
+        </ul>
+        </li>
+
+
+        <!-- Modulo  Control y Seguridad de Sistema -->
+
+        <li class="item-submenu" menu="5">
+        <a href="#"><span class="fas fa-network-wired icon-menu"></span>Control y Seguridad de Sistema</a>
+        <ul class="submenu">
+
+        <li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span>Control y Seguridad de Sistema</li>
+        <li class="go-back">Atras</li>
+       
+       <li><div  id="Conexiones-Usuarios" class="menu" ><span class="fa fa-home icon-menu"></span>Ultimas Conexiones</div></li>              
+        </ul>
+        </li>
+        
+            
+
+       
+
+    </header>
+
+
+
+
+
+
+    <iframe id="content" >Error en Carga</iframe>
+
+
+
+
+
+
+ 
+
+
+</body>
+</html>

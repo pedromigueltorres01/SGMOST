@@ -1,0 +1,160 @@
+create table usuario(
+Usuario varchar(50),
+Primer_Nombre varchar(50), 
+Segundo_Nombre varchar(50),
+Primer_Apellido varchar(50),
+Segundo_Apellido varchar (50),
+Nacionalidad varchar(2),
+Cedula integer,
+Perfil varchar(15),
+Grupo varchar(20),  
+Fecha_Nacimiento date,
+Fecha_Ingreso date,
+Operador_Telf_Cel integer,
+Telf_Celular integer,
+Operador_Telf_Casa integer,
+Telf_Casa integer,
+Password1 varchar(200),
+Password_confir varchar(200),
+Estado varchar (20),
+Municipio varchar(20),
+Ciudad varchar(50),
+Calle varchar (50),
+Urbanizacion varchar(200),
+Casa varchar(50),
+status integer,
+constraint id_usuario primary key (Usuario));
+
+
+
+create table disponibilidad(
+id serial not null, 
+Visa_Porc integer,
+Visa_Aprobaciones integer, 
+Master_Porc integer,
+Master_Aprobaciones integer,
+Ipg_Porc integer,
+Ipg_Aprobaciones integer,
+Porc_Time_Out integer,
+Time_Out integer,
+
+IST_Switch integer,
+Suiche_7B_Adquiriente integer,
+Suiche_7B_Emisor integer,
+
+Usuarios_Activos integer,
+Acceso_Empresarial integer,
+
+Usuarios_Activos integer,
+Usuarios_Login integer,
+Usuarios_Transando integer,
+Posicion_Consolidada integer,
+Movimientos_Cuentas integer,
+
+P2P_Aprobadas integer,
+P2P_Rechazadas integer,
+P2P_Total integer,
+
+P2C_Aprobadas integer,
+P2C_Rechazadas integer,
+P2C_Total integer,
+
+MQ0P integer,
+Msj_Entregar_MQ0P integer,
+MQ1P integer,
+Msj_Entregar_MQ1P integer,
+
+Encolamiento_Tedexis integer,
+Instancias_Tedexis integer,
+Encolamiento_Total_Texto integer,
+Instancias_Total_Texto integer,
+
+Cantv integer,
+Movilnet integer,
+Conatel integer,
+Digitel integer,
+Seniat integer,
+Movistar integer,
+Corpoelec integer,
+Billetera_Movil integer,
+Hidrocapital integer,
+Directv integer,
+
+Max_Task_Global integer,
+Cpu integer,
+Temperatura integer,
+Transacciones_Cics integer,
+
+Total_Agencias integer,
+Enlaces_Operativos integer,
+Porc_Operativos integer,
+Enlaces_Inoperativos integer,
+Porc_Inoperativos integer,
+
+constraint id_Disponibilidad primary key (id));
+
+
+
+
+create table Cierre_Turno(
+id serial not null, 
+Temperatura Varchar (8),
+Humedad Varchar (8),
+BO integer,
+M5 integer,
+M9 integer,
+Produccion integer,
+Desarrollo integer,
+Calidad integer,
+Observaciones varchar (400),
+constraint id_Cierre_Turno primary key (id));
+
+
+
+
+create table Documentacion(
+id serial not null, 
+Gestion_Monitoreo varchar(400),
+Gestion_Seguridad varchar(400),
+Gestion_Seguimiento varchar(400),
+constraint id_Documentacion primary key (id));
+
+
+
+
+create table Grupo_Guardia(
+id serial not null, 
+Supervisor varchar(15),
+Primer_Integrante varchar(15),
+Segundo_Integrante varchar(15),
+Tercer_Integrante varchar(15),
+Cuarto_Integrante varchar(15),
+Primer_Gention varchar(15),
+Segundo_Gention varchar(15),
+Primer_Monitoreo varchar(15),
+Segundo_Monitoreo vatchar(15),
+constraint id_Inicio_Turno primary key (id));
+
+
+
+
+create table Inicio_Turno(
+id serial not null, 
+Turno varchar(15),
+Temperatura Varchar (8),
+Humedad Varchar (8),
+BO integer,
+M5 integer,
+M9 integer,
+Produccion integer,
+Desarrollo integer,
+Calidad integer,
+constraint id_Inicio_Turno primary key (id));
+
+
+
+
+select * from usuario
+insert into usuario (usuario,password) values ('admin','1234')
+
+

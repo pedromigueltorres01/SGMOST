@@ -1,0 +1,48 @@
+.clockdate-wrapper {
+    position: absolute;
+    background-color: #333;
+    padding:15px;
+    max-width:280px;
+    width:50%;
+    resize: 30%;
+    text-align:center;
+    border-radius:25px;
+    margin:0 auto;
+    margin-top:10%;
+    opacity: 55%;
+    right: 2%;
+  
+ 
+
+}
+#clock{
+    background-color:#333;
+    font-family: sans-serif;
+    font-size:40px;
+    text-shadow:0px 0px 1px #fff;
+    color:#fff;
+}
+#clock span {
+    color:#888;
+    text-shadow:0px 0px 1px #333;
+    font-size:20px;
+    position:relative;
+    top:-27px;
+    left:-10px;
+}
+#date {
+    letter-spacing:10px;
+    font-size:14px;
+    font-family:arial,sans-serif;
+    color:#fff;
+}
+
+
+
+#fecha {
+    color:#888;
+    text-shadow:0px 0px 1px #333;
+    font-size:20px;
+    position:relative;
+    top:6px;
+    left:-10px;

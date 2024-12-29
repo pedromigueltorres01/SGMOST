@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="icon" type="image/png" href="../../../Vista/Estilo/Images/icono1.png">
+
+
+  <!-- Required meta tags -->  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Required Estilos y Plugins -->
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Css/Formularios/Formulario_Disponibilidad_Corta.css">
+
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/fontawesome.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/regular.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/solid.css">
+
+    <script src=../../../Vista/Estilo/Plugins/Jquery/Jquery/jquery-3.2.1.js"></script>
+    <script src="../../../Vista/Estilo/Js/Funciones/Redirecciones_Pestañas.js"></script>
+
+
+    <title>Disponibilidad Corta</title>
+
+
+</head>
+    
+    <body>
+
+
+   
+
+        <form action="../../../Controlador/Disponibilidad_Servicio/Registro_Disponibilidad_Corta.php"id="formulario" name="formulario" method="post">
+
+        <div class="form">
+        <div class="cerrar" id="cerrar"><a href="javascript:cerrar()"><img src="../../../Vista/Estilo/Images/logo cierre.png"></a>
+
+
+
+            <h1>Disponibilidad</h1>
+            <h2>Corta</h2></br>
+             
+
+<div class="Disponibilidad" id="Disponibilidad">
+
+    <h3>Consorcio Credicard</h3>
+
+        <div class="Consorcio-Credicard">
+
+        <h4>Visa</h4>
+        <input type="text" name="Visa_Porc"  id="Visa_Porc"  placeholder="% Visa" autofocus required>    
+        <input type="text" name="Visa_Aprobaciones"  id="Visa_Aprobaciones"  placeholder="Aprob." autofocus required>
+
+        <h4>Master</h4> 
+        <input type="text" name="Master_Porc"  id="Master_Porc"  placeholder="% Master" autofocus required>
+        <input type="text" name="Master_Aprobaciones"  id="Master_Aprobaciones"  placeholder="Aprob" autofocus required>
+
+        <h4>Maestro</h4> 
+        <input type="text" name="Maestro_Porc"  id="Maestro_Porc"  placeholder="% Maestro" autofocus required>
+        <input type="text" name="Maestro_Aprobaciones"  id="Maestro_Aprobaciones"  placeholder="Aprob" autofocus required>
+
+        <h4>IPG</h4> 
+        <input type="text" name="Ipg_Porc"  id="Ipg_Porc"  placeholder="% IPG " autofocus required>
+        <input type="text" name="Ipg_Aprobaciones"  id="Ipg_Aprobaciones"  placeholder="Aprob" autofocus required>
+
+        <h4>Time Out</h4>
+        <input type="text" name="Porc_Time_Out"  id="Porc_Time_Out"  placeholder="% Time Out" autofocus required>
+
+
+        <select type="text" name="Time_Out" id="Time_Out" required><span class="barra"></span>
+                        <option value="">Servicio</option>
+                        <option value="1">Debito</option>
+                        <option value="2">Credito</option>
+                        </select> </div>
+
+
+
+         
+        <h3>Servicios Operativos</h3>
+        <div class="Servicios-Operativos">
+
+
+        <select type="text" name="Banca_Internet" id="Banca_Internet" required><span class="barra"></span>
+                        <option value="">Banca Internet</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+        
+      
+        <select type="text" name="Pagina_Publica" id="Pagina_Publica" required><span class="barra"></span>
+                        <option value="">Pagina Publica</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+        <select type="text" name="Pago_Clave" id="Pago_Clave" required><span class="barra"></span>
+                        <option value="">Pago Clave</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+
+        <select type="text" name="Biopago" id="Biopago" required><span class="barra"></span>
+                        <option value="">Biopago</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+
+        <select type="text" name="ATM" id="ATM" required><span class="barra"></span>
+                        <option value="">ATM</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+        
+      
+        <select type="text" name="Suiche_7B_Adquiriente" id="Suiche_7B_Adquiriente" required><span class="barra"></span>
+                        <option value="">Suiche 7B Adquiriente</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+
+        <select type="text" name="Suiche_7B_Emisor" id="Suiche_7B_Emisor" required><span class="barra"></span>
+                        <option value="">Suiche 7B Emisor</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+
+        <select type="text" name="IST_Switch" id="IST_Switch" required><span class="barra"></span>
+                        <option value="">IST Switch</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+                        
+        </div>
+    </div>
+
+
+        
+
+        
+
+
+        
+
+        
+
+    </br><button type="submit">CONTINUAR</button>
+        </form>
+
+
+ 
+
+</body>
+</html>

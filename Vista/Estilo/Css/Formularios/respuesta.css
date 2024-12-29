@@ -1,0 +1,46 @@
+.CampoVacio{
+	/*centre el texo*/
+	text-align: center;
+	/* le da color al texto*/
+	color: #FF0000;
+	/*tama;o a texto*/
+	font-size: 20px;
+	/*tipo de fuente*/
+	font-family:'Arial Black',"Franklin Gothic Heavy" ;
+	/*negrita*/
+	font-weight: bold;
+
+	line-height: 20px;
+	/*text-shadow: 1px 1px 1px #610B0B;*/
+}
+.Yaexiste{
+	text-align: center;
+	/* le da color al texto*/
+	color: #FF4000;
+	/*tama;o a texto*/
+	font-size: 20px;
+	/*tipo de fuente*/
+	font-family:'Arial Black',"Franklin Gothic Heavy" ;
+	/*negrita*/
+	font-weight: bold;
+
+	line-height: 20px;
+
+}
+.registro{
+	text-align: center;
+	/* le da color al texto*/
+	color: #088A08;
+	/*tama;o a texto*/
+	font-size: 20px;
+	/*tipo de fuente*/
+	font-family:'Arial Black',"Franklin Gothic Heavy" ;
+	/*negrita*/
+	font-weight: bold;
+
+	line-height: 20px;
+
+}
+.btn{
+	background: #01DF01;
+}

@@ -1,0 +1,235 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after {display: table;  content: ''; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	color: red;
+	background: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 900px;
+	margin-top: 10%;
+
+
+}
+
+
+
+
+
+
+.pricing-section a {
+	color: red;
+}
+
+.pricing-section a:hover, 
+.pricing-section a:focus {
+	color: #000;
+}
+
+
+
+
+/* Cuadro */
+.codrops-demos {
+	margin: 2em 0 0;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+
+.codrops-demos a.current-demo {
+	color: #333;
+}
+
+.bg-1 {
+	background: transparent;
+	background-size: cover;
+	color: #fff;
+}
+
+
+/* Related demos */
+.content--related {
+	text-align: center;
+	font-weight: bold;
+	padding: 10em 1em;
+	background: #2C292F;
+}
+
+.media-item {
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.media-item__img {
+	max-width: 100%;
+	opacity: 0.6;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+	opacity: 1;
+}
+
+.media-item__title {
+	margin: 0;
+	padding: 0.5em;
+	font-size: 1em;
+}
+
+
+
+
+
+.pricing {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto 3em;
+}
+
+.pricing__item {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	text-align: center;
+	-webkit-flex: 0 1 330px;
+	flex: 0 1 330px;
+}
+
+.pricing__feature-list {
+	text-align: left;
+}
+
+.pricing__action {
+	color: inherit;
+	border: none;
+	background: none;
+}
+
+.pricing__action:focus {
+	outline: none;
+}
+
+
+button{
+    background: red;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, red, blue);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, red, blue);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    width: 100px;
+    height: 40px;
+    border:none;
+    color:#fff; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+/* Bitacora Tablas*/
+.pricing--sonam .pricing__item {
+	margin: 1em;
+	padding: 2em;
+	cursor: default;
+	border-radius: 20px;
+	background: red;
+	opacity: 85%;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05), 0 15px 30px -10px rgba(0,0,0,0.3);
+	-webkit-transition: background 0.3s;
+	transition: background 0.3s;
+}
+
+.pricing--sonam .pricing__item:hover {
+	background: #141315;
+}
+
+.pricing--sonam .pricing__title {
+	font-size: 2em;
+	width: 100%;
+	margin: 0 0 0.25em;
+	padding: 0 0 0.5em;
+	border-bottom: 3px solid rgb(27, 26, 28);
+}
+
+.pricing--sonam .pricing__price {
+	color: #E06060;
+	font-size: 1.75em;
+	padding: 1em 0 0.75em;
+}
+
+.pricing--sonam .pricing__sentence {
+	font-weight: bold;
+}
+
+.pricing--sonam .pricing__feature-list {
+	margin: 0;
+	padding: 1em 1.25em 2em;
+}
+
+.pricing--sonam .pricing__action {
+	font-weight: bold;
+	margin-top: auto;
+	padding: 0.75em 2em;
+	border-radius: 5px;
+	background: #E06060;
+	-webkit-transition: background 0.3s;
+	transition: background 0.3s;
+}
+
+.pricing--sonam .pricing__action:hover,
+.pricing--sonam .pricing__action:focus {
+	background: #BD3C3C;
+}
+
+button{
+	margin-bottom: 8px;
+
+}
+
+img{
+	height: 150px;
+}
+@media screen and (max-width: 50em) {
+	.codrops-header {
+		padding: 3em 10% 4em;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.codrops-header h1 {
+		font-size: 2.8em;
+	}
+}

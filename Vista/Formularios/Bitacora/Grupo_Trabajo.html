@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="icon" type="image/png" href="../../../Vista/Estilo/Images/icono1.png">
+
+
+  <!-- Required meta tags -->  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Required Estilos y Plugins -->
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Css/Formularios/Formulario_Bitacora.css">
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/fontawesome.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/regular.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/solid.css">
+
+    <script src=../../../Vista/Estilo/Plugins/Jquery/Jquery/jquery-3.2.1.js"></script>
+    <script src="../../../Vista/Estilo/Js/Funciones/Redirecciones_Pestañas.js"></script>
+
+    <title>Bitacora / Grupo de Trabajo</title>
+
+
+</head>
+    
+    <body>
+
+   
+
+
+
+   
+        <form action="../../../Controlador/Control_Gestion_Bitacora/Registro_Grupo_Guardia.php"id="formulario" name="formulario" method="post">
+
+        <div class="form">
+        <a href="../../Tablas/Tablas_Bitacora/Seleccion_Bitacora.html" id="Atras"><img src="../../../Vista/Estilo/Images/logo cierre.png"></a>
+
+
+
+            <h1>Gestion y Bitacora</h1>
+
+            <h2>Grupo de Trabajo</h2></br>
+
+
+
+<div class="Grupo-Bitacora" id="Grupo-Bitacora">
+
+        <div class="Turno">
+        <h4>Turno</h4>
+        <select type="text" name="Turno" id="Turno" required><span class="barra"></span>
+                        <option >...</option>
+                        <option value="1">Turno 1</option>
+                        <option value="2">Turno 2</option>
+                        <option value="3">Turno 3</option>
+                        </select> 
+
+        <h4>Supervisor</h4>
+        <input type="text" name="Supervisor"  id="Supervisor  placeholder="Supervisor" autofocus required></div>
+
+
+        </div>
+
+         <br><h3>Inicio de Turno</h3>
+
+        <div class="Grupo-Trabajo">
+        <input type="text" name="Primer_Integrante"  id="Primer_Integrante"  placeholder="Primer Integrante" autofocus required>
+
+        <input type="text" name="Segundo_Integrante"  id="Segundo_Integrante"  placeholder="Segundo Integrante" autofocus required>
+
+        <input type="text" name="Tercer_Integrante"  id="Tercer_Integrante"  placeholder="Tercer Integrante" autofocus required>
+
+        <input type="text" name="Cuarto_Integrante"  id="Cuarto_Integrante"  placeholder="Cuarto Integrante" autofocus required></div>
+
+
+        <br><h3>Organizacion de Grupo</h3>
+
+        <div class="Organizacion-Grupo">
+
+        <h4>Gestion</h4>
+        <input type="text" name="Primer_Gention"  id="Primer_Gestion"  placeholder="Pers. Gestion 1" autofocus required>
+
+        <input type="text" name="Segundo_Gention"  id="Segundo_Gention"  placeholder="Pers. Gestion 2" autofocus required>
+
+        <h4>Monitoreo</h4>
+        <input type="text" name="Primer_Monitoreo"  id="Primer_Monitoreo"  placeholder="Pers. Monitoreo 1" autofocus required>
+
+        <input type="text" name="Segundo_Monitoreo"  id="Segundo_Monitoreo"  placeholder="Pers. Monitoreo 2" autofocus required></div>
+
+        
+        
+
+    </br><button type="submit">GUARDAR</button>
+        </form>
+
+
+ 
+
+</body>
+</html>

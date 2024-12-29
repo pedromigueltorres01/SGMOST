@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="icon" type="image/png" href="../../../Vista/Estilo/Images/icono1.png">
+
+
+  <!-- Required meta tags -->  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Required Estilos y Plugins -->
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Css/Formularios/Formulario_Disponibilidad.css">
+
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/fontawesome.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/regular.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/solid.css">
+
+    <script src=../../../Vista/Estilo/Plugins/Jquery/Jquery/jquery-3.2.1.js"></script>
+    <script src="../../../Vista/Estilo/Js/Funciones/Redirecciones_Pestañas.js"></script>
+
+
+    <title>Disponibilidad de Sevicio</title>
+
+
+</head>
+    
+    <body>
+
+
+   
+
+        <form action="../../../Controlador/Disponibilidad_Servicio/Registro_Disponibilidad.php"id="formulario" name="formulario" method="post">
+
+        <div class="form">
+        <div class="cerrar" id="cerrar"><a href="javascript:cerrar()"><img src="../../../Vista/Estilo/Images/logo cierre.png"></a>
+
+
+
+            <h1>Disponibilidad</h1>
+            <h2>de Servicio</h2></br>
+             
+
+<div class="Disponibilidad" id="Disponibilidad">
+
+    <h3>Consorcio Credicard</h3>
+
+        <div class="Consorcio-Credicard">
+
+        <h4>Visa</h4>
+        <input type="text" name="Visa_Porc"  id="Visa_Porc"  placeholder="% Visa" autofocus required>    
+        <input type="text" name="Visa_Aprobaciones"  id="Visa_Aprobaciones"  placeholder="Aprob." autofocus required>
+
+        <h4>Master</h4> 
+        <input type="text" name="Master_Porc"  id="Master_Porc"  placeholder="% Master" autofocus required>
+        <input type="text" name="Master_Aprobaciones"  id="Master_Aprobaciones"  placeholder="Aprob" autofocus required>
+
+        <h4>Maestro</h4> 
+        <input type="text" name="Maestro_Porc"  id="Maestro_Porc"  placeholder="% Maestro" autofocus required>
+        <input type="text" name="Maestro_Aprobaciones"  id="Maestro_Aprobaciones"  placeholder="Aprob" autofocus required>
+
+        <h4>IPG</h4> 
+        <input type="text" name="Ipg_Porc"  id="Ipg_Porc"  placeholder="% IPG " autofocus required>
+        <input type="text" name="Ipg_Aprobaciones"  id="Ipg_Aprobaciones"  placeholder="Aprob" autofocus required>
+
+        <h4>Time Out</h4>
+        <input type="text" name="Porc_Time_Out"  id="Porc_Time_Out"  placeholder="% Time Out" autofocus required>
+
+
+        <select type="text" name="Time_Out" id="Time_Out" required><span class="barra"></span>
+                        <option value="">Servicio</option>
+                        <option value="1">Debito</option>
+                        <option value="2">Credito</option>
+                        </select> </div>
+
+
+
+         
+        <h3>Servicios Operativos</h3>
+        <div class="Servicios-Operativos">
+
+
+        <select type="text" name="Banca_Internet" id="Banca_Internet" required><span class="barra"></span>
+                        <option value="">Banca Internet</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+        
+      
+        <select type="text" name="Pagina_Publica" id="Pagina_Publica" required><span class="barra"></span>
+                        <option value="">Pagina Publica</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+        <select type="text" name="Pago_Clave" id="Pago_Clave" required><span class="barra"></span>
+                        <option value="">Pago Clave</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+
+        <select type="text" name="Biopago" id="Biopago" required><span class="barra"></span>
+                        <option value="">Biopago</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+
+        <select type="text" name="ATM" id="ATM" required><span class="barra"></span>
+                        <option value="">ATM</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+        
+      
+        <select type="text" name="Suiche_7B_Adquiriente" id="Suiche_7B_Adquiriente" required><span class="barra"></span>
+                        <option value="">Suiche 7B Adquiriente</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+
+        <select type="text" name="Suiche_7B_Emisor" id="Suiche_7B_Emisor" required><span class="barra"></span>
+                        <option value="">Suiche 7B Emisor</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+
+        <select type="text" name="IST_Switch" id="IST_Switch" required><span class="barra"></span>
+                        <option value="">IST Switch</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+                        
+        </div>
+
+
+        <h3>Empresarial</h3>
+
+
+        <div class="Banca-Internet">
+
+        <input type="text" name="Usuarios_Empresarial"  id="Usuarios_Empresarial"  placeholder="Usu. Activos" autofocus required>
+
+
+        <select type="text" name="Acceso_Empresarial" id="Acceso_Empresarial" required><span class="barra"></span>
+                        <option value="">Acceso Empresarial</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select></div>
+
+
+
+
+
+        <h3>BDV En línea</h3>
+
+        <div class="Banca-Internet-Enlinea">
+
+
+        <input type="text" name="Usuarios_Bdvenlinea"  id="Usuarios_Bdvenlinea"  placeholder="Usuarios Activos" autofocus required>   
+        
+        <input type="text" name="Usuarios_Login"  id="Usuarios_Login"  placeholder="Usuarios login" autofocus required>
+
+        <input type="text" name="Posicion_Consolidada"  id="Posicion_Consolidada"  placeholder="Posicion Consolidada" autofocus required>
+
+        <input type="text" name="Usuarios_Transando"  id="Usuarios_Transando"  placeholder="Usuarios Transando" autofocus required></div>
+
+
+
+
+
+        <h3>P2P / P2P</h3>
+
+        <div class="P2P-P2C">
+
+        <h4>P2P</h4> 
+        <input type="text" name="P2P_Aprobadas"  id="P2P_Aprobadas"  placeholder="Aprobadas" autofocus required>    
+        <input type="text" name="P2P_Rechazadas"  id="P2P_Rechazadas"  placeholder="Rechazadas" autofocus required>
+
+        <input type="text" name="P2P_Total"  id="P2P_Total"  placeholder=" Total" autofocus required>
+
+    
+        <h4>P2C</h4> 
+        <input type="text" name="P2C_Aprobadas"  id="P2C_Aprobadas"  placeholder="Aprobadas." autofocus required>     
+        <input type="text" name="P2C_Rechazadas"  id="P2C_Rechazadas"  placeholder="Rechazadas" autofocus required>
+
+        <input type="text" name="P2C_Total"  id="P2C_Total"  placeholder=" Total" autofocus required></div>
+
+
+
+
+        <h3>MQ</h3>
+
+        <div class="MQ">
+
+        <h4>MQ0P</h4> 
+        <input type="text" name="MQ0P"  id="MQ0P"  placeholder="Cantidad" autofocus required>           
+        <input type="text" name="Msj_Entregar_MQ0P"  id="Msj_Entregar_MQ0P"  placeholder="Mensaje Por entrega" autofocus required>
+
+        <h4>MQ1P</h4> 
+        <input type="text" name="MQ1P"  id="MQ1P"  placeholder="Cantidad" autofocus required>     
+        <input type="text" name="Msj_Entregar_MQ1P"  id="Msj_Entregar_MQ1P"  placeholder="Mensaje Por entrega" autofocus required></div>
+
+
+
+     
+        <h3>Integradoras</h3>
+
+        <div class="Integradoras">
+
+        <h4>Tedexis</h4> 
+        <input type="text" name="Encolamiento_Tedexis"  id="Encolamiento_Tedexis"  placeholder="Encolamiento" autofocus required>    
+        
+        <input type="text" name="Instancias_Tedexis"  id="Instancias_Tedexis"  placeholder="Instancias" autofocus required>
+    
+        <h4>Total Texto</h4> 
+        <input type="text" name="Encolamiento_Total_Texto"  id="Encolamiento_Total_Texto"  placeholder="Encolamiento" autofocus required>    
+        
+        <input type="text" name="Instancias_Total_Texto"  id="Instancias_Total_Texto"  placeholder="Instancias" autofocus required></div>
+
+
+
+
+
+        <h3>Pagos de Servicios</h3>
+
+        <div class="Pagos-Servicios">
+     
+        <select type="text" name="Cantv" id="Cantv" required><span class="barra"></span>
+                        <option value="">Cantv</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+        
+      
+        <select type="text" name="Movilnet" id="Movilnet" required><span class="barra"></span>
+                        <option value="">Movilnet</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+
+        <select type="text" name="Conatel" id="Conatel" required><span class="barra"></span>
+                        <option value="" >Conatel</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+
+        <select type="text" name="Digitel" id="Digitel" required><span class="barra"></span>
+                        <option value="">Digitel</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+
+
+  
+        <select type="text" name="Seniat" id="Seniat" required><span class="barra"></span>
+                        <option value="">Seniat</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+        
+
+        <select type="text" name="Movistar" id="Movistar" required><span class="barra"></span>
+                        <option value="">Movistar</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+
+        <select type="text" name="Corpoelec" id="Corpoelec" required><span class="barra"></span>
+                        <option value="">Corpoelec</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select> 
+
+
+        <select type="text" name="Billetera_Movil" id="Billetera_Movil" required><span class="barra"></span>
+                        <option value="">Billetera Movil</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+        <select type="text" name="Hidrocapital" id="Hidrocapital" required><span class="barra"></span>
+                        <option value="">Hidrocapital</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select>
+
+
+        <select type="text" name="Directiv" id="Directiv" required><span class="barra"></span>
+                        <option value="">Directiv</option>
+                        <option value="0">Operativo</option>
+                        <option value="1">Inoperativ</option>
+                        </select></div>
+
+
+
+
+
+
+        <h3>Consumo Mainframe</h3>
+
+        <div class="Consumo-Mainframe">
+
+         
+        <input type="text" name="Max_Task_Global"  id="Max_Task_Global"  placeholder="Máx Task Global" autofocus required>    
+        
+        <input type="text" name="CPU"  id="CPU"  placeholder="CPU" autofocus required>
+ 
+        <input type="text" name="Temperatura"  id="Temperatura"  placeholder="Temperatura" autofocus required>    
+        
+        <input type="text" name="Transacciones_Cics"  id="Transacciones_Cics"  placeholder="Transacciones Cics" autofocus required></div>
+
+
+        <h3>Estatus de Agencias</h3>
+
+        <div class="Agencias">
+
+        <input type="text" name="Total_Agencias"  id="Total_Agencias"  placeholder="Total de Agencias" autofocus required>    
+        
+        <input type="text" name="Enlaces_Operativos"  id="Enlaces_Operativos"  placeholder="Enlaces Operativos" autofocus required>    
+
+        <input type="text" name="Enlaces_Inoperativos"  id="Enlaces_Inoperativos"  placeholder="Enlaces Inoperativos" autofocus required>    
+
+</div></div>
+
+        
+
+
+        
+
+        
+
+    </br><button type="submit">CONTINUAR</button>
+        </form>
+
+
+ 
+
+</body>
+</html>

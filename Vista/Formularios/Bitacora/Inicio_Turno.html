@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="icon" type="image/png" href="../../../Vista/Estilo/Images/icono1.png">
+
+
+  <!-- Required meta tags -->  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Required Estilos y Plugins -->
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Css/Formularios/Formulario_Bitacora.css">
+
+    
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/fontawesome.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/regular.css">
+
+    <link rel="stylesheet" href="../../../Vista/Estilo/Plugins/Fontawesome/css/solid.css">
+
+    <script src=../../../Vista/Estilo/Plugins/Jquery/Jquery/jquery-3.2.1.js"></script>
+    <script src="../../../Vista/Estilo/Js/Funciones/Redirecciones_Pestañas.js"></script>
+
+    <title>Bitacora / Inicio de Turno</title>
+
+
+</head>
+    
+    <body>
+
+   
+
+   
+
+        <form action="../../../Controlador/Control_Gestion_Bitacora/Registro_Inicio_Turno.php"id="formulario" name="formulario" method="post">
+
+        <div class="form">
+        <a href="../../Tablas/Tablas_Bitacora/Seleccion_Bitacora.html" id="Atras"><img src="../../../Vista/Estilo/Images/logo cierre.png"></a>
+
+
+
+            <h1>Gestion y Bitacora</h1>
+
+             <h2>Inicio de Turno</h2></br>
+
+
+
+
+        <h4>Hora de Recepcion de Turno</h4>
+
+        <div class="Recepcion">
+        <select type="text" name="Turno" id="Turno" required><span class="barra"></span>
+                        <option >...</option>
+                        <option value="7">7 AM</option>
+                        <option value="3">15 PM</option>
+                        <option value="19">19 PM</option>
+                        </select></div>
+
+
+   <div class="Grupo-Bitacora2" id="Grupo-Bitacora2">     
+
+ <h4>Temperatura</h4>
+
+        <div class="Temperatura">
+        <input type="text" name="Temperatura"  id="Temperatura"  placeholder="Temperatura" autofocus required></div>
+
+
+       <h4>Humedad</h4>
+
+        <div class="Humedad">
+        <input type="text" name="Humedad"  id="Humedad"  placeholder="Humedad" autofocus required>
+        </div>
+</div>
+
+
+
+        <br><h3>Scratch</h3>
+        <div class="Scratch">
+
+        <h4>BO</h4>
+        <input type="text" name="BO"  id="BO"  placeholder=" Cantidad" autofocus required>
+
+        <h4>M5</h4>
+        <input type="text" name="M5"  id="M5"  placeholder=" Cantidad" autofocus required>
+
+        <h4>M9</h4>
+        <input type="text" name="M9"  id="M9"  placeholder=" Cantidad" autofocus required>
+        </div>
+
+        <br><h3>Consolas</h3>
+        <div class="Consolas">
+
+        <h4>Produccion</h4>
+        <input type="text" name="Produccion"  id="Produccion"  placeholder=" Spool" autofocus required>
+
+        <h4>Desarrollo</h4>
+        <input type="text" name="Desarrollo"  id="Desarrollo"  placeholder=" Spool" autofocus required>
+
+        <h4>Calidad</h4>
+        <input type="text" name="Calidad"  id="Calidad"  placeholder=" Spool" autofocus required>
+        </div>
+
+
+        
+
+    </br><button type="submit">GUARDAR</button>
+        </form>
+
+
+ 
+
+</body>
+</html>
